@@ -1,0 +1,40 @@
+.services {
+    padding-top: 50px;
+
+    @include border-top;
+}
+
+.services__item {
+    width: 100%;
+    max-width: 500px;
+
+    position: relative;
+
+    margin: 0 auto 40px;
+}
+
+.services__content {
+    padding-left: 115px;
+}
+
+.services__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.services__title {
+    @include secondary-font;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $gray_dark;
+
+    margin-bottom: 15px;
+}
+
+.services__text {
+    line-height: 1.8;
+}

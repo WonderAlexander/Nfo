@@ -1,0 +1,29 @@
+.btn {
+    @include btn;
+
+    transition: background .1s linear, border .1s linear;
+
+
+    &--black {
+        color: #000;
+        border-color: #000;
+
+        margin-top: 30px;
+
+        transition: color .1s linear, background .1s linear;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &--pricing {
+        border-color: transparent;
+        background-color: #a5c895;
+    }
+
+    &:hover {
+        background-color: $green;
+        border-color: $green;
+    }
+}

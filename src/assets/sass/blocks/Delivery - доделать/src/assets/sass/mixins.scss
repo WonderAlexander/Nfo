@@ -1,0 +1,38 @@
+@mixin main-text {
+    font-family: 'Helvetica Neue' sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $gray;
+}
+
+@mixin section-title {
+    font-family: "Novecento Wide DemiBold" sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $gray_dark;
+}
+
+@mixin btn {
+    display: inline-block;
+    vertical-align: top;
+
+    font-family: "Novecento Wide DemiBold", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: 8px 20px;
+
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+@mixin border-top {
+    border-top: 1px solid #c2c2c2;
+}
+
+@mixin secondary-font {
+    font-family: "Novecento Wide DemiBold" sans-serif;
+}

@@ -1,0 +1,27 @@
+.footer__form {
+    width: 100%;
+    max-width: 410px;
+
+    display: flex;
+    position: relative;
+
+    padding-bottom: 8px;
+    margin-bottom: 50px;
+
+    border-bottom: 1px solid $gray_light;
+}
+
+.footer__input {
+    width: 80%;
+
+    background-color: transparent;
+    border: none;
+
+    color: $gray_light;
+
+    padding: 2px;
+
+    &:focus {
+        outline: none;
+    }
+}

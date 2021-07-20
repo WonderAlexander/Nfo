@@ -1,0 +1,64 @@
+.health {
+    width: 100%;
+
+    padding-top: 200px;
+
+    @media (max-width: 414px) {
+       display: none;
+    }
+}
+
+.health__inner {
+    position: relative;
+}
+
+.health__img-img {
+    position: absolute;
+    bottom: 5px;
+    right: 165px;
+    z-index: 1;
+
+
+    @media (max-width: 768px) {
+        width: 60%;
+        right: 5px;
+    }
+}
+
+.health__img-bg {
+    width: 100%;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        height: 250px;
+    }
+
+}
+
+
+.health__text {
+    width: 100%;
+    max-width: 525px;
+
+    text-align: left;
+
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    z-index: 1;
+    transform: translate3d(-20%, -50%, 0);
+
+}
+
+.health__title {
+    @include header;
+    color: $white;
+
+    margin-bottom: 15px;
+}
+
+.health__text-text {
+    color: $white;
+
+    margin-bottom: 38px;
+}

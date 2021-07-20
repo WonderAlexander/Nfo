@@ -1,0 +1,28 @@
+.page {
+    width: 100%;
+
+    padding-top: 180px;
+}
+
+.page__header {
+    width: 100%;
+    height: 100px;
+
+    background: url("../img/page-title/page-title.png") center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page__title {
+    font-family: "Novecento Wide DemiBold", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fff;
+
+    @media (max-width: 414px) {
+        font-size: 25px;
+    }
+}

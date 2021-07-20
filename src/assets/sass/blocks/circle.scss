@@ -1,0 +1,166 @@
+.circle {
+    width: 530px;
+    height: 530px;
+
+    position: relative;
+    margin: 0 auto;
+
+    background: url("../img/action/circle-bg.png") center no-repeat;
+    background-size: cover;
+
+    @media (max-width: 414px) {
+        display: none;
+     }
+
+     @media (max-width: 768px) {
+        display: none;
+     }
+ }
+
+.circle__top {
+    display: flex;
+
+    padding: 0 111px;
+}
+
+.circle__top-block {
+    position: relative;
+
+    height: 140px;
+
+    padding-top: 90px;
+}
+
+.circle__icon-left {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    z-index: 1;
+
+    padding: 10px;
+    background-color: #fff;
+}
+
+.circle__icon-right {
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    z-index: 1;
+
+    padding: 10px;
+    background-color: #fff;
+}
+
+.circle__text {
+    width: 152px;
+
+    text-align: center;
+    font-size: 13px;
+
+    &--left {
+        padding-left: 35px;
+    }
+
+    &--right {
+        padding-right: 35px;
+    }
+}
+
+.circle__center {
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.center__icon-left {
+    position: absolute;
+    left: -25px;
+    z-index: 1;
+
+    padding: 10px;
+    background-color: #fff;
+}
+
+.center__icon-right {
+    position: absolute;
+    right: -25px;
+    z-index: 1;
+
+    padding: 10px;
+    background-color: #fff;
+}
+
+.circle__center-circle {
+    width: 181px;
+    height: 181px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+
+    border-radius: 50%;
+    background-color: #ebebeb;
+
+    text-align: center;
+    padding: 55px 10px;
+
+    p {
+        font-size: 14px;
+        color: $gray_light;
+    }
+}
+
+.circle__bottom {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 50px;
+}
+
+.circle__bottom-left {
+    position: relative;
+
+    padding-bottom: 40px;
+    padding-left: 120px;
+}
+
+.bottom__icon-left {
+    position: absolute;
+    bottom: -18px;
+    left: 80px;
+    z-index: 1;
+
+    padding: 8px;
+    background-color: #fff;
+}
+
+.circle__bottom-right {
+    position: relative;
+
+    padding-bottom: 40px;
+    padding-right: 90px;
+}
+
+.bottom__icon-right {
+    position: absolute;
+    bottom: -30px;
+    right: 85px;
+    z-index: 1;
+
+    padding: 8px;
+    background-color: #fff;
+}

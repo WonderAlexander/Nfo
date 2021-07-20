@@ -1,0 +1,56 @@
+.form__section {
+    margin-bottom: 20px
+}
+
+.form__section-title {
+    @include secondary-font;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $gray_dark;
+
+    sup {
+        color: #e74c3c;
+        padding-left: 2px;
+    }
+}
+
+.form__section-label {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.form__section-input {
+    width: 100%;
+    max-width: 350px;
+
+    border-color: transparent;
+    background-color: #efefef;
+    color: $gray_dark;
+
+    padding: 8px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.form__section-textarea {
+    width: 100%;
+    max-width: 656px;
+    height: 300px;
+
+    border-color: transparent;
+    background-color: #efefef;
+    color: $gray_dark;
+
+    padding: 8px;
+
+
+    resize: none;
+
+    &:focus {
+        outline: none;
+    }
+}

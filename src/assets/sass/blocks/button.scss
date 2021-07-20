@@ -1,0 +1,76 @@
+.btn {
+    @include button;
+
+    transition: background .1s linear;
+
+    &:hover {
+        background-color: lighten($blue, 10%);
+    }
+
+    &--white {
+        color: $black;
+        background-color: $white;
+
+        padding: 17px 80px 16px 60px;
+
+        transition: background .1s linear;
+
+        &:hover {
+            background-color: $gray_light;
+        }
+
+        @media (max-width: 414px) {
+          text-align: center;
+        }
+    }
+
+    &--health {
+        color: $black;
+        background-color: $white;
+
+        padding: 17px 40px 16px 20px;
+
+        transition: background .1s linear, color .1s linear;
+
+        &:hover {
+            background-color: $gray_light;
+        }
+    }
+
+    &--long {
+        padding: 17px 80px 16px 60px;
+    }
+
+    @media (max-width: 414px) {
+        width: 100%;
+        padding: 17px 100px 16px 80px;
+        text-align: center;
+    }
+}
+
+.btn__arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.footer__form-btn {
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+}

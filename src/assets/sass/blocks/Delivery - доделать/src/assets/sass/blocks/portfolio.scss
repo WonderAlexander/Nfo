@@ -1,0 +1,47 @@
+.portfolio__works {
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.portfolio__block {
+    padding: 55px 0;
+
+    @include border-top;
+}
+
+.portfolio__nav {
+    width: 560px;
+
+    display: flex;
+
+    font-size: 18px;
+
+    margin: 0 auto;
+
+    @media (max-width: 414px) {
+        width: 300px;
+        font-size: 8.5px;
+    }
+}
+
+.portfolio__nav-link {
+    font-family: "Novecento Wide DemiBold", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $gray_dark;
+
+    margin: 0 10px;
+
+    transition: color .1s linear;
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        color: $green;
+    }
+}

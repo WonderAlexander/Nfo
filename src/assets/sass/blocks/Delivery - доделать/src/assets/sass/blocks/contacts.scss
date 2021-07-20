@@ -1,0 +1,56 @@
+.contacts {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    @include border-top;
+    border-bottom: 1px solid #ccc
+}
+
+.contacts__form-title {
+    @include secondary-font;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $gray_dark;
+
+    margin-bottom: 15px;
+}
+
+.contacts__form-text {
+    margin-bottom: 20px;
+    padding-right: 80px;
+}
+
+.info__section {
+    margin-bottom: 45px;
+
+    @media (max-width: 768px) {
+        margin-top: 50px;
+    }
+}
+
+.info__section-title {
+    @include secondary-font;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $gray_dark;
+
+    margin-bottom: 10px;
+}
+
+.info__section-text {
+    margin-bottom: 20px;
+}
+
+.info__section-address {
+    text-decoration: none;
+    color: $gray;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.info__section-hint {
+    margin-top: 15px;
+}

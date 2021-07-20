@@ -1,0 +1,35 @@
+.about__info {
+    @include border-top;
+
+    padding: 55px 0;
+
+    &--pricing {
+        border-top: 0;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.about__info-block {
+    text-align: left;
+
+    margin-bottom: 50px;
+}
+
+.block__title {
+    font-family: "Novecento Wide DemiBold", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $gray_dark;
+
+    margin-bottom: 25px;
+}
+
+.about__info-text {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.team__item {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,75 @@
+@import "vars";
+@import "mixins";
+
+
+/* Default styles */
+body {
+    margin: 0;
+
+    @font-face {
+        font-family: 'Helvetica Neue';
+        src: local('Helvetica Neue Roman'), local('Helvetica-Neue-Roman'),
+            url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+            url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+            url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Novecento Wide DemiBold";
+        src:
+        url("../fonts/AnyConv.com__Novecento\ WideDemiBold.woff2") format("woff2"),
+        url("../fonts/AnyConv.com__Novecento\ WideDemiBold.woff") format("woff"),
+        url("../fonts/AnyConv.com__Novecento\ WideDemiBold.ttf") format("truetype");
+     }
+
+     @include main-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*Bootstrap*/
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/containers";
+
+/*Blocks*/
+@import "blocks/header";
+@import "blocks/social";
+@import "blocks/intro";
+@import "blocks/nav";
+@import "blocks/search";
+@import "blocks/btn";
+@import "blocks/section";
+@import "blocks/service";
+@import "blocks/work";
+@import "blocks/footer";
+@import "blocks/portfolio";
+@import "blocks/page";
+@import "blocks/works";
+@import "blocks/about";
+@import "blocks/team";
+@import "blocks/services";
+@import "blocks/pricing";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/burger";
+@import "blocks/nav-toggle";
+@import "blocks/modal";

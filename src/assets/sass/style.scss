@@ -1,0 +1,56 @@
+@import "vars";
+@import "mixins";
+
+
+/*Default*/
+body {
+    @include reset;
+    @include text-blue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include reset;
+}
+
+p {
+    @include reset;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/*Bootstrap*/
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/containers";
+
+
+/*Blocks*/
+@import "blocks/header";
+@import "blocks/nav";
+@import 'blocks/intro';
+@import "blocks/button";
+@import "blocks/advantages";
+@import "blocks/action";
+@import "blocks/circle";
+@import "blocks/use";
+@import "blocks/section";
+@import "blocks/application";
+@import "blocks/mailing";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/form";
+@import "blocks/catalog";
+@import "blocks/about";
+@import "blocks/helpers";
+@import "blocks/product";
+@import "blocks/health";
+@import "blocks/reviews";
+@import "blocks/article";
+@import "blocks/burger";

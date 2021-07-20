@@ -1,0 +1,41 @@
+.article {
+    width: 100%;
+    max-width: 670px;
+
+    margin: 0 auto 28px;
+    padding: 20px;
+
+    text-align: left;
+
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: none;
+
+    background-color: #e3e3e3;
+}
+
+.article__header {
+    width: 170px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article__author {
+    @include header;
+    text-transform: none;
+    font-size: 16px;
+
+    &--blue {
+        color: $white;
+    }
+}
+
+.article__date {
+    font-size: 12px;
+    line-height: 15px;
+    color: $gray_light;
+
+    padding-top: 2px;
+}

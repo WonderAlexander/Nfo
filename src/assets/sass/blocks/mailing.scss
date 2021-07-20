@@ -1,0 +1,50 @@
+.mailing {
+    width: 100%;
+    height: 450px;
+
+    background: url("../img/mailing/mailing-bg.jpg") center no-repeat;
+    background-color: $black;
+    background-size: cover;
+}
+
+.mailing__bg {
+    width: 100%;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgba($black, 0.5);
+}
+
+.mailing__inner {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mailing__content {
+    width: 100%;
+    max-width: 525px;
+
+    text-align: left;
+}
+
+.mailing__title {
+    @include header;
+    color: $white;
+
+    margin-bottom: 18px;
+
+    @media (max-width: 414px) {
+        font-size: 22px;
+    }
+}
+
+.mailing__text {
+    color: $white;
+    margin-bottom: 38px;
+}

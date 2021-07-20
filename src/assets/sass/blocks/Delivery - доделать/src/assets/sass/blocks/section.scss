@@ -1,0 +1,53 @@
+.section {
+    padding: 60px 0;
+
+    &--gray {
+        background-color: #efefef;
+
+        padding-bottom: 170px;
+
+        position: relative;
+    }
+
+    &--dark{
+        background-color: #efefef;
+    }
+
+    &--work {
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
+}
+
+.section__header {
+    width: 100%;
+    max-width: 860px;
+
+    text-align: center;
+
+    padding-bottom: 60px;
+    margin: 0 auto;
+
+    &--portfolio {
+        padding-top: 55px
+    }
+
+    &--home {
+        @include border-top;
+        padding-top: 50px
+    }
+}
+
+.section__title {
+    @include section-title;
+
+    margin-bottom: 15px;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+

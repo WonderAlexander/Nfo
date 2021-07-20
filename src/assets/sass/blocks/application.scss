@@ -1,0 +1,43 @@
+.app {
+    padding: 0 180px;
+    margin-bottom: 45px;
+
+    @media (max-width: 414px) {
+        padding: 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+.app__item-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.app__item {
+    width: 100%;
+    max-width: 165px;
+
+    text-align: center;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.app__text {
+    width: 100%;
+    max-width: 610px;
+
+    text-align: center;
+
+    margin: 0 auto;
+
+    p {
+        margin-bottom: 35px;
+    }
+}

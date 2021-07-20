@@ -1,0 +1,40 @@
+.team__item-img {
+    margin-bottom: 20px;
+}
+
+.team__item-name {
+    @include secondary-font;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $gray_dark;
+
+    margin-bottom: 5px;
+}
+
+.team__item-job {
+    margin-bottom: 12px;
+}
+
+.team__item-text {
+    padding-right: 20px;
+
+    &:before {
+        content: "";
+        display: block;
+
+        width: 265px;
+        height: 1px;
+
+        background-color: #c2c2c2;
+
+        margin-bottom: 18px;
+    }
+}
+
+
+.team__item-social {
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+}

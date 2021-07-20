@@ -1,0 +1,61 @@
+/*Text*/
+@mixin header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: $blue;
+}
+
+@mixin text-blue {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $blue;
+}
+
+
+@mixin text-black {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $black;
+}
+
+@mixin text-sm {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $black;
+}
+
+/*Reset*/
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+/*Buttons*/
+@mixin button {
+    display: inline-block;
+    vertical-align: top;
+
+    position: relative;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 400px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+
+    border: 1px solid transparent;
+    background-color: $blue;
+
+    padding: 17px 40px 16px 20px;
+}

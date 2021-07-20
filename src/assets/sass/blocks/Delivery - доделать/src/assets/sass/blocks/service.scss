@@ -1,0 +1,45 @@
+.service {
+    padding-top: 80px;
+
+    border-top: 1px solid #cccccc;
+
+    @media (max-width: 767px) {
+        padding-top: 40px;
+    }
+}
+
+.service__item {
+    text-align: center;
+
+    padding: 0 5px;
+    margin-bottom: 50px;
+}
+
+.service__icon {
+    margin-bottom: 20px;
+}
+
+.service__title {
+    font-family: "Novecento Wide DemiBold", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $gray_dark;
+
+    margin: 0 auto 20px auto;
+}
+
+
+.service__text {
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.service__link {
+    text-decoration: none;
+    color: $green;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

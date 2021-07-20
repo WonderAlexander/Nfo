@@ -1,0 +1,29 @@
+.advantages {
+    padding-top: 65px;
+}
+
+.advantages__item {
+    position: relative;
+
+    @media (max-width: 414px) {
+        width: 100%;
+        max-width: 300px;
+
+        margin: 0 auto;
+     }
+ }
+
+.advantages__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.advantages__text {
+    font-size: 14px;
+    color: $gray;
+    padding-left: 55px;
+}

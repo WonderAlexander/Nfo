@@ -1,0 +1,28 @@
+.works__item {
+   width: 100%;
+   max-width: 357px;
+
+   margin: 0 auto 80px;
+}
+
+.works__text {
+    padding: 0 30px;
+
+    margin-bottom: 25px;
+}
+
+.works__title {
+    font-family: "Novecento Wide DemiBold", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $gray_dark;
+
+    margin-bottom: 15px;
+}
+
+.works__img {
+    @media (max-width: 414px) {
+        display: none;
+    }
+}

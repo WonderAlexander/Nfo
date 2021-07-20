@@ -1,0 +1,57 @@
+.intro {
+    width: 100%;
+    height: 600px;
+
+    padding-top: 165px;
+
+
+    background: url("../img/intro/skider-1.jpg") center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    @media (max-width: 767px) {
+        height: 400px;;
+    }
+}
+
+.intro__title {
+    font-family: "Novecento Wide DemiBold", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #fff;
+
+    margin-bottom: 5px;
+
+    & .intro__title-span {
+        color: $green;
+    }
+        @media (max-width: 767px) {
+            font-size: 25px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 20px;
+        }
+}
+
+.intro__subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    color: lighten( $gray, 50%);
+
+    margin-bottom: 30px;
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 14px;
+    }
+}
